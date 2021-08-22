@@ -4,12 +4,8 @@
 
 # VOC_CLASSES = ( '__background__', # always index 0
 VOC_CLASSES = (
-    "Liomyoma", 
-    "Lipoma", 
-    "Pancreatic Rest", 
-    "GIST", 
-    "Cyst",  
-    "NET", 
-    "Cancer",
-    "Normal"
+    "holothurian",
+    "echinus",
+    "scallop",
+    "starfish"
 )

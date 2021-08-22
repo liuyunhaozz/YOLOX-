@@ -48,7 +48,8 @@ class AnnotationTransform(object):
         """
         res = np.empty((0, 5))
         for obj in target.iter("object"):
-            difficult = int(obj.find("difficult").text) == 1
+            # difficult = int(obj.find("difficult").text) == 1
+            difficult = 0
             if not self.keep_difficult and difficult:
                 continue
             # name = obj.find("name").text.lower().strip()
