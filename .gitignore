@@ -1,3 +1,6 @@
-./datasets
-./vis_res
-./YOLOX_outputs
+datasets/
+vis_res/
+YOLOX_outputs/
+build/
+yolox.egg-info/
+__pycache__
