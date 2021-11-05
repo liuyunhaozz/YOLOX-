@@ -4,8 +4,6 @@
 
 # VOC_CLASSES = ( '__background__', # always index 0
 VOC_CLASSES = (
-    "holothurian",
-    "echinus",
-    "scallop",
-    "starfish"
+    "a",
+    "b"
 )

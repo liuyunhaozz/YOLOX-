@@ -11,7 +11,7 @@ from yolox.data import get_yolox_datadir
 class Exp(MyExp):
     def __init__(self):
         super(Exp, self).__init__()
-        self.num_classes = 8   # 添加了辅助类别normal
+        self.num_classes = 2   # 添加了辅助类别normal
         self.depth = 1.33   # YOLOX-x
         self.width = 1.25
         self.exp_name = os.path.split(os.path.realpath(__file__))[1].split(".")[0]
