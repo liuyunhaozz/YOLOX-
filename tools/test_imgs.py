@@ -135,7 +135,7 @@ def image_demo(predictor, vis_folder, path, current_time, save_result):
 def main(): 
     exp = get_exp(exp_file = "./exps/eus_voc/yolox_voc_x.py", exp_name=None)
     logger.info("\t加载exp文件...")
-    img_path = "../Downloads/test-B-image"
+    img_path = "test-image"
     vis_folder = "./vis_res"
     os.makedirs(vis_folder, exist_ok=True)
 
@@ -149,7 +149,7 @@ def main():
     model.eval()
     logger.info("\t模型导入...")
 
-    ckpt_file = os.path.join("./YOLOX_outputs/yolox_voc_x", "latest_ckpt.pth.tar")
+    ckpt_file = os.path.join("./YOLOX_outputs/yolox_voc_x", "best_ckpt.pth.tar")
     fuse = False
     ckpt = torch.load(ckpt_file, map_location="cpu")
     model.load_state_dict(ckpt["model"])
